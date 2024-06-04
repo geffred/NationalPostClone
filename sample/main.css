@@ -1,0 +1,224 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*border: 1px solid black;*/
+
+}
+
+/* nav */
+
+header nav:nth-child(1){
+    background: rgb(255, 200, 0);
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+/* nav-btn*/
+
+header nav .nav-btn a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin: 0px 10px;
+    font-weight: 500;
+    font-size: .9em;
+}
+
+header nav .nav-btn a:hover{
+    text-decoration: underline;
+}
+
+header nav .nav-btn a img{
+    margin-right:10px;
+}
+
+header nav .nav-btn {
+    display:flex;
+    flex-direction: row;
+}
+
+/* nav-logo*/
+header nav .nav-logo{
+    display: flex;
+    justify-content:center ;
+}
+header nav .nav-logo img{
+    max-width: 200px;
+   
+}
+header nav a{
+    display: inline-block;
+    margin: 0px auto;
+}
+
+/*  nav-sign */
+
+header nav .nav-sign a{
+    font-size: .9em;
+    text-decoration: none;
+    margin: 0px 20px;
+    font-weight: 500;
+}
+
+header nav .nav-sign a:nth-child(1){  
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: rgb(48, 79, 135);
+    color: white;
+}
+
+header nav .nav-sign a:nth-child(1):hover{
+    background:rgb(38, 64, 108) ;
+}
+
+header nav .nav-sign a:nth-child(2){
+    color: rgb(48, 79, 135);
+}
+
+header nav .nav-sign a:nth-child(2):hover{
+    text-decoration: underline;
+}
+
+
+header nav:nth-child(2){
+    padding: 20px 0px;
+    border-bottom: .2px solid rgba(192, 192, 192, 0.679);
+   
+}
+
+header nav:nth-child(2) ul{
+    list-style: none;
+    font-size: .9em;
+    margin: 0px;
+}
+
+header nav:nth-child(2) ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+header nav:nth-child(2) ul li a:hover{
+    text-decoration: underline;
+    color: rgb(60, 96, 162);
+}
+
+/* sub-nav */
+
+header .sub-nav a{
+    text-decoration: none;
+    padding: 5px 10px;
+}
+header .sub-nav a:hover{
+    text-decoration: underline;
+    color: rgb(60, 96, 162);;
+  
+}
+header .sub-nav a:hover h3{
+    color:rgb(60, 96, 162);;
+}
+header .sub-nav h3{
+    font-size: .85em;
+    color: black;
+    font-weight: 500;
+    
+}
+
+header .sub-nav img{
+    max-width: 100px;
+    height: auto;
+}
+
+header .sub-nav a:nth-child(1){
+    border-right: 1px solid silver;
+}
+header a:nth-child(2){
+    border-right: 1px solid silver;
+}
+header a:nth-child(3){
+    border-right: 1px solid silver;
+}
+
+header .line{
+    height: .8px;
+    width: 100%;
+    background:black;
+    margin: 4px 0px;
+
+}
+
+/* article column1 */
+
+main article a{
+    text-decoration: none;
+    color: black;
+}
+main article a:hover{
+    text-decoration: underline;
+}
+
+main .column1 article  a:nth-child(1){
+  
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 89, 221);
+}
+
+main .column2 article  a:nth-child(1){
+  
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 89, 221);
+}
+
+main .column1 article  a:nth-child(2){
+  
+    font-weight: bold;
+}
+
+main .column2 article  a:nth-child(3){
+  
+    font-weight: bold;
+}
+
+main .column1 article div span{
+    font-size: .9em;
+}
+
+main .column1 article div img:nth-child(3){
+
+    opacity: .5;
+}
+
+/* article column2 */
+
+
+main .column2 article a img{
+    margin: 0px auto;
+}
+main .column2{
+    border-left: 1px solid rgb(159, 159, 159);
+    border-right: 1px solid rgb(159, 159, 159);
+}
+
+main .column2 a{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+main .column2 article div{
+    padding: 0px;
+}
+
+main .column2 article p {
+    padding: 0px;
+ margin: 0px ;
+}
+
+main .column2 article  a:nth-child(2){
+    
+    margin-top: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 89, 221);
+}
