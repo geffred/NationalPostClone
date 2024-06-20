@@ -188,6 +188,8 @@ header .sub a{
     display: none;
 }
 
+
+
 @media only screen and (max-width: 1000px) {
     header #nav{
         display: none;
@@ -211,7 +213,7 @@ header .sub a{
         display: block;
         text-align: center; 
         text-decoration: none;
-        width: 80%;
+        width: 40%;
         padding: 10px 20px;
         border-radius: 5px;
         background: rgb(48, 79, 135);
