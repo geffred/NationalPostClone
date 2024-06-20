@@ -8,6 +8,10 @@
 
 /* nav */
 
+header #nav ul{
+    display: flex;
+}
+
 header nav:nth-child(1){
     background: rgb(255, 200, 0);
     padding: 10px 0px;
@@ -24,6 +28,16 @@ header nav .nav-btn a{
     margin: 0px 10px;
     font-weight: 500;
     font-size: .9em;
+    display: block;
+}
+
+header nav .nav-btn a span{
+    display: block;
+}
+
+header nav .nav-btn #search{
+    display: flex;
+    align-items: center;
 }
 
 header nav .nav-btn a:hover{
@@ -81,36 +95,53 @@ header nav .nav-sign a:nth-child(2):hover{
     text-decoration: underline;
 }
 
+header nav .nav-sign{
+    padding: 0px;
+}
 
-header nav:nth-child(2){
+header nav:nth-child(3){
     padding: 20px 0px;
     border-bottom: .2px solid rgba(192, 192, 192, 0.679);
    
 }
 
-header nav:nth-child(2) ul{
+header nav:nth-child(3) ul{
     list-style: none;
     font-size: .9em;
     margin: 0px;
 }
 
-header nav:nth-child(2) ul li a{
+header nav:nth-child(3) ul li a{
     text-decoration: none;
     color: black;
     font-weight: 500;
 }
 
-header nav:nth-child(2) ul li a:hover{
+header nav:nth-child(3) ul li a:hover{
     text-decoration: underline;
     color: rgb(60, 96, 162);
 }
 
 /* sub-nav */
+header .sub-nav {
+    display: block;
+}
+
+header .sub-nav .row a{
+    width: 300px;
+}
+
+header .sub-nav .row{
+    flex-wrap: nowrap;
+    display: flex;
+    overflow-x: auto;
+}
 
 header .sub-nav a{
     text-decoration: none;
     padding: 5px 10px;
 }
+
 header .sub-nav a:hover{
     text-decoration: underline;
     color: rgb(60, 96, 162);;
@@ -147,6 +178,47 @@ header .line{
     background:black;
     margin: 4px 0px;
 
+}
+
+header #search{
+    display: block;
+}
+
+header .sub a{ 
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    header #nav{
+        display: none;
+    }
+    header nav .nav-sign a:nth-child(1){
+        display: none;
+    }
+    header nav .nav-sign a:nth-child(2){
+        font-size: .9em;
+        font-weight: bold;
+    }
+    header nav .nav-btn #search{
+        display: none;
+        
+    }
+
+    header nav .nav-btn a span{
+        display: none;
+    }
+    header .sub a{ 
+        display: block;
+        text-align: center; 
+        text-decoration: none;
+        width: 80%;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background: rgb(48, 79, 135);
+        margin: 5px auto;
+        color: white;
+    }
+  
 }
 
 /* article column1 */
@@ -201,6 +273,8 @@ main .column2{
     border-right: 1px solid rgb(159, 159, 159);
 }
 
+
+
 main .column2 a{
     margin: 0px;
     padding: 0px;
@@ -221,4 +295,114 @@ main .column2 article  a:nth-child(2){
     margin-top: 10px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     color: rgb(0, 89, 221);
+}
+
+main .column2 .articles article:nth-child(1){
+    border-right: 1px solid silver;
+}
+
+/* column3 */
+
+.column3 #index-video{
+    height: 100%;
+    width: 100%;
+  
+}
+
+main .column3 .next_up{
+    font-size: .8em;
+    font-weight: bold;
+    color: black;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+main .column3 .next_up:hover{
+    text-decoration: underline;
+}
+
+
+
+main .column3 .next_up img{
+    
+    max-width: 100%;
+  
+
+}
+
+footer {
+    margin-top: 50px;
+    background: rgb(24, 24, 24);
+}
+
+footer .footer1 img{
+    width: 80px;
+    height: auto;
+}
+
+footer .footer1 .liens{
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+footer .footer1 .liens a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+footer .footer1 .liens a:hover{
+    text-decoration: underline;
+}
+
+footer .footer2 h5{
+    color: white;
+    text-transform: uppercase;
+}
+
+footer .footer2 a{
+    font-size: .85em;
+}
+
+.bar_article{
+    display: none;
+}
+
+@media only screen and (max-width: 1000px){
+    main .column2{
+        border: none;
+    }
+    main .column2 .articles article:nth-child(1){
+        border: none;
+    }
+  
+}
+
+@media only screen and (max-width: 988px){
+
+    main .column1{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 488px){
+    .bar_article{
+        display:block;
+    }
+    
+}
+
+main .article-content{
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+main .recherche-content{
+    margin: 0px auto;
+    max-width: 600px;
 }
